@@ -1,4 +1,4 @@
-# LazyBook
+# LazyBook - VERSION ALPHA 
 
 LazyBook is an automated facebook birthday wisher and data collection tool written in Python 2.7.  It uses your facebook profile to collect information about your friends via web scraping since this information was depreciated from Facebook's graph API in 2014.  While stack overflow said it was impossible, I wanted to automate wishing my facebook friends a happy birthday - after all, they should know how much I care about them and treasure our friendship (even when I don't log into facebook to specifically wish them a happy birthday).  As a result, I developed this script with the primary goal fo automating the process of wishing my freinds a happy birthday.  During the development process, I realized that we can accomplish so much more than simply wishing people a happy birthday.  I've included additional methods (getSingle and unfriendCheck) as proof of concepts and demonstrations on how information can be collected from your friends.  getSingle saves a text file of the friends who's relationship status is single on facebook and unfriendCheck compiles a list of people I am no longer friends with (updated at the end of every month).  
 
@@ -61,6 +61,7 @@ At the bottom of the file, modify the messages list as you see fit to customize 
 
 ### Setting up an automated task (for mac users only) 
 1. Navigate to ~Library/LaunchAgents/ in finder
+1a. Navigate to the directory with your script and replace "YOUR_ROOTNAME_HERE" with the result from "echo $USER" command in BASH
 2. paste org.lazybook.birthday.plist from your LazyBook directory into the LaunchAgents folder
 3. Open up the command terminal and navigate to ~/Library/LaunchAgents
 4. type "launchctl load ~/Library/LaunchAgents/org.lazybook.birthday.plist" in the terminal to load the automated task
@@ -69,8 +70,8 @@ At the bottom of the file, modify the messages list as you see fit to customize 
 
 To stop the automated task (and stop this script from running automatically), simply navigate to ~Library/LaunchAgents/ in your terminal and type "launchctl remove org.lazybook.birthday"
 
-[Helpful Resource for starting tasks](http://killtheyak.com/schedule-jobs-launchd/)
-[Helpful Resource for stopping tasks](http://osxdaily.com/2011/03/08/remove-an-agent-from-launchd/)
+* [Helpful Resource for starting tasks](http://killtheyak.com/schedule-jobs-launchd/)
+* [Helpful Resource for stopping tasks](http://osxdaily.com/2011/03/08/remove-an-agent-from-launchd/)
 
 ## Bugs List
 
@@ -86,7 +87,7 @@ To stop the automated task (and stop this script from running automatically), si
 * Collect posts by friends and run through a binary classifier (i.e. spam filter) to determine if a friend is "spam" or "not spam"
 
 ## License
-Feel free to use this software in any legal endeavors or projects - just link back to this repo to acknowledge my work and help other developers find this script.
+Feel free to use this software in any legal endeavors or projects - just link back to this repo to acknowledge my work and help other developers find this script (licensed under MIT License)
 
 ## Final Thoughts
 
