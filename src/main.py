@@ -75,6 +75,11 @@ if metaData["wishBirthday"] == True:
 if metaData["getSingle"]:
 	# if we already have a list of our single friends, then do nothing
 	if not os.path.isfile(structDir + '/single.txt'):
+
+		# link friends to facebook vanity if not done
+		if not os.path.isfile(structDir + '/friendsDict.pkl'):
+			getFriends.consolidateFriends(s)
+
 		getSingle.getSingle(s)
 
 

@@ -8,7 +8,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>/usr/local/bin/python</string>
-        <string>/Users/YOUR_ROOTNAME_HERE/Documents/LazyBook/src/main.py</string>
+        <string>/Users/YOUR_USERNAME_HERE/Documents/LazyBook/src/main.py</string>
     </array>
     <!-- Run every day -->
     <key>StartInterval</key>

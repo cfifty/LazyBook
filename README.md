@@ -2,7 +2,7 @@
 
 LazyBook is an automated Facebook birthday wisher and data collection tool written in Python 2.7.  It utilizes your Facebook login credentials to collect information from your friends' profiles via web scraping.  While I originally intended to leverage Facebook's API to collect this information, this functionality was depreciated from Facebook's graph API in 2014.  
 
-Ever since I was a young boy, I wanted my friends to realize how much I care and treasure our friendship.  I've expressed this affection in a multitude of different ways.  Taping their beds to the wall (requires more duct tape than you'd think...), telling girls that they had a crush on them, even leaving a pet rat in an especially treasured friend's bedroom for him to discover.  Last year with the power and utility of introduction to data structures class under my belt, I set off to help my 800+ Facebook friends realize the depths of our friendship by automatically wishing them a happy birthday.  Much to my chagrin, Stack Overflow said this task was impossible - BASH scripts previously written using Facebook's API no longer worked.  But I've always preferred to see no or "that's impossible" as a challenge rather than an answer.  
+Ever since I was a young boy, I wanted my friends to realize how much I care and treasure our friendship.  Last year with the power and utility of an introduction to data structures class under my belt, I set off to help my 800+ Facebook friends realize the depths of our friendship by automatically wishing them a happy birthday.  Much to my chagrin, Stack Overflow said this task was impossible - BASH scripts previously written using Facebook's API no longer worked.  But I've always preferred to see no or "that's impossible" as a challenge rather than an answer.  
 
 During my journey to develop an automated Facebook birthday wisher, I realized that we can accomplish so much more than simply wishing people a happy birthday.  For example, the getSingle.py file collects a list of your friends who list single as their relationship status.  unfriendCheck.py compiles a list of friends who you are no longer friends with (updated each month).  I encourage you to expand on the examples I provide and open pull requests with your contributions.  After all, we're all in need of a poke-war bot.
 
@@ -70,7 +70,7 @@ ignoreList = ["first_name last_name", "first_name last_name", "first_name last_n
 
 #### wishBirthday.py
 
-At the bottom of this file, there is a list named messages.  Modify this list as you see fit to customize or add new messages.  Each message has an euqal probability of being chosen.  After the message is chosen, there is a 50% chance that it is posted to your friend's wall.  The other 50% is a message that says "Happy Birthday first_name!".  You can modify this other 50% in the wish method in the same file. 
+At the bottom of this file, there is a list named messages.  Modify this list as you see fit to customize or add new messages.  Each message has an equal probability of being chosen.  After the message is chosen, there is a 50% chance that it is posted to your friend's wall.  The other 50% is a message that says "Happy Birthday first_name!".  You can modify this other 50% in the wish method in the same file. 
 
 ### Setting up an automated task (macOS) 
 0. Open org.lazybook.birthday.plist in your favorite text editor and change "YOUR_USERNAME_HERE" to your mac user account name (the one that appears when you type in `echo $USER` or `whoami` in your terminal.
