@@ -12,7 +12,11 @@ This script is fairly straight forward - all it requires is the installation of 
 
 ### Installing Libraries
 
-Setup is fairly simple, all we need to do is install several common python libraries.  In your command terminal type the following:
+Setup is fairly simple, all we need to do is install several common python libraries.  You can follow either of the following procedures:
+
+Option 1: In your command terminal, navigate inside of your LazyBook folder and type ```pip install -r requirements.txt```
+
+Option 2:  In your command terminal type the following:
 
 ```
 pip install bs4
@@ -93,6 +97,7 @@ At the bottom of this file, there is a list named messages.  Modify this list as
 
 ## TODO List
 
+* Switch over username and password from in-line code to environment variables (and update documentation)
 * Create a GUI!!!
 * rewrite in Python 3
 * write a Getting Started tutorial for windows users
