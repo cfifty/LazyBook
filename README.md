@@ -14,9 +14,10 @@ This script is fairly straight forward - all it requires is the installation of 
 
 Setup is fairly simple, all we need to do is install several common python libraries.  You can follow either of the following procedures:
 
-Option 1: In your command terminal, navigate inside of your LazyBook folder and type ```pip install -r requirements.txt```
+**Option 1:** In your command terminal, navigate inside of your LazyBook folder and type 
+```pip install -r requirements.txt```
 
-Option 2:  In your command terminal type the following:
+**Option 2:**  In your command terminal type the following:
 
 ```
 pip install bs4
